@@ -1,4 +1,4 @@
--- Connect to examode db
+-- Connect 
 \c vicentinaserramenti
 
 -- Insert operations
@@ -22,7 +22,6 @@ INSERT INTO Customer VALUES ('+394329876054','Roberta','Ghidoni','Via Frasca 1',
 INSERT INTO Customer VALUES ('034726374','Enzo', 'Iacchetti', 'Via Pedale 12', 'enziach@example.com', 'Fantastic Windows');
 INSERT INTO Customer VALUES ('0491518605','Jacopo','Salviato','Via Milano 12','jackisale@example.it','other');
 
---##########   /*check descriptive pdf*/   ####################################
 INSERT INTO Quote VALUES (default,1200.00, 'https://www.google.it/', 'carote@example.it', '+391112200987', '20-01-2018');
 INSERT INTO Quote VALUES (default,2500.00, 'https://www.nba.com', 'carote@example.it', '+393462004448', '21-02-2018');
 INSERT INTO Quote VALUES (default,19000.50, 'https://www.realmadridbaloncesto.es/','carote@example.it', '0491426085', '22-09-2018');
@@ -39,7 +38,6 @@ INSERT INTO JobOrder VALUES (5,'15-07-2018', 'https://www.google.it/', '05-09-20
 INSERT INTO JobOrder VALUES (6,'09-04-2019', 'https://www.google.it/', '29-06-2019');
 INSERT INTO JobOrder VALUES (7,'20-02-2019', 'https://www.google.it/', '20-05-2019');
 
---- //####check job order id####### ---
 INSERT INTO WarrantyReport VALUES (default,'https://bootstrapious.com/p/bootstrap-sidebar', 'https://www.google.it/', 1);
 INSERT INTO WarrantyReport VALUES (default,'https://www.live.com/', 'https://www.google.it/', 2);
 INSERT INTO WarrantyReport VALUES (default,'https://www.long.it/docs', 'https://www.google.it/', 3);
@@ -47,18 +45,14 @@ INSERT INTO WarrantyReport VALUES (default,'https://www.vicolocieco.es/documents
 INSERT INTO WarrantyReport VALUES (default,'https://www.www.ww/docs', 'https://www.google.it/', 5);
 INSERT INTO WarrantyReport VALUES (default,'https://bootstrapious.com/p/bootstrap-sidebar', 'https://www.google.it/', 6);
 
-
-
 INSERT INTO Supplier VALUES ('98075643209', 'Flamarlegno');
 INSERT INTO Supplier VALUES ('12309856743', 'Windows AC Milan');
 INSERT INTO Supplier VALUES ('00998877765', 'Best windows');
-
 
 INSERT INTO Material VALUES ('1234569870','Window blue','Blue window for Roberta');
 INSERT INTO Material VALUES ('9087060590', 'Door white', 'This is a white door for indoor');
 INSERT INTO Material VALUES ('3210984567', 'Gold handle', 'Indoor gold handle');
 INSERT INTO Material VALUES ('1627384950', 'Window dark brown','Front house outdoor window'); 
-
 
 INSERT INTO Contacted VALUES ('+393462004448', 'The bests',true);
 INSERT INTO Contacted VALUES ('034726374', 'Fantastic Windows', false);
@@ -66,15 +60,12 @@ INSERT INTO Contacted VALUES ('0491426085', 'other', true);
 INSERT INTO Contacted VALUES ('0491518605', 'other', true);
 INSERT INTO Contacted VALUES ('+393462004448', 'Fantastic Windows', true);
 
-
---- //####check job order id####### ----
 INSERT INTO IsFulfilledBy VALUES ('13243546576', 1, 40, 7);
 INSERT INTO IsFulfilledBy VALUES ('10101215873', 1, 24, 7);
 INSERT INTO IsFulfilledBy VALUES ('13243546576', 2, 39, 7);
 INSERT INTO IsFulfilledBy VALUES ('97867564534', 3, 20, 9);
 INSERT INTO IsFulfilledBy VALUES ('97867564534', 5, 13, 7);
 INSERT INTO IsFulfilledBy VALUES ('10101215873', 6, 14, 9);
-
 
 INSERT INTO Purchased VALUES (1, '98075643209', '1234569870', 3, 150.00, 'https://www.vicolocieco.es/documents');
 INSERT INTO Purchased VALUES (1, '12309856743', '9087060590', 5, 370.00, 'https://www.www.ww/docs');
